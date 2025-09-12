@@ -22,15 +22,6 @@ const BackgroundParticles = styled.div`
   z-index: 1;
 `;
 
-const Particle = styled(motion.div)`
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: var(--electric-cyan);
-  border-radius: 50%;
-  opacity: 0.6;
-`;
-
 const ContentContainer = styled.div`
   text-align: center;
   z-index: 2;

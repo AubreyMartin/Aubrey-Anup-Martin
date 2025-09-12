@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -194,8 +194,6 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-
   const projects: Project[] = [
     {
       id: 1,
@@ -272,8 +270,6 @@ const Projects: React.FC = () => {
                 rotateX: 5,
                 rotateY: 5,
               }}
-              onHoverStart={() => setHoveredCard(project.id)}
-              onHoverEnd={() => setHoveredCard(null)}
             >
               <ProjectImage bgImage={project.image} />
 
